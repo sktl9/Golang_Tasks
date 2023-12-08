@@ -67,7 +67,7 @@ func FindOdd(seq []int) int {
 }
 
 func main() {
-	inputArray := []int{10, 20, 30, 56, 67, 90, 10, 20}
-	FindOdd(inputArray)
+	string := "hellow"
+	fmt.Println(string[1])
 
 }
