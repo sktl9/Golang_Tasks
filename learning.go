@@ -66,8 +66,25 @@ func FindOdd(seq []int) int {
 	return 0
 }
 
-func main() {
-	string := "hellow"
-	fmt.Println(string[1])
 
+type food interface {
+	eat()
+}
+
+type fruit struct{}
+
+func (f *fruit) eat() {
+	fmt.Println("я ем фрукт")
+}
+
+type meet struct{}
+
+func (m * meet) eat() {
+	fmt.Println("я ем мясо")
+}
+
+func main() {
+    var f,m food =&fruit{}, &meet{}
+	f.eat()
+	m.eat()
 }
